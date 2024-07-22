@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AwsTokenForm));
             this.textBoxAccessKey = new System.Windows.Forms.TextBox();
             this.textBoxAccessSecret = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -106,6 +107,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxAccessSecret);
             this.Controls.Add(this.textBoxAccessKey);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AwsTokenForm";
             this.Text = "AwsTokenForm";
             this.ResumeLayout(false);

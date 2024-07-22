@@ -25,7 +25,7 @@ namespace S3_Downloader
         public void Form1_Load(object sender, EventArgs e)
         {
             ImageList imgList = new ImageList();
-            imgList.Images.Add(Bitmap.FromFile(@"C:\Users\kjh95\source\repos\S3-Downloader\S3-Downloader\icon\folder.png"));
+            imgList.Images.Add(S3_Downloader.Properties.Resources.folder);
             treeView1.ImageList = imgList;
 
             if (!string.IsNullOrEmpty(S3_Downloader.Properties.Settings.Default.AccessKey))
